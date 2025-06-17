@@ -1,38 +1,47 @@
-# 🗂️ Analizador Léxico en Python
+# 🗂️ Lexical Analyzer in Python
+## 🤖 What is a Lexical Analyzer?
 
-Integrantes:
+A **lexical analyzer** (also known as a *lexer* or *scanner*) is the first phase of a compiler. It takes a stream of characters (typically source code) and groups them into **tokens**, which are sequences of characters with a collective meaning.  
+For example, in the statement `x = 5 + y`, the lexer would produce tokens such as `<id,x>`, `<assign,=>`, `<num,5>`, `<plus,+>`, and `<id,y>`.
 
-- Eduardo Hincapie 
-- Josh Lopez 
-- Miguel Suarez 
-- Maria Alejandra Vargas
+This process allows the next stages of compilation (like parsing and semantic analysis) to work with a simplified and structured version of the input code.
 
-El objetivo para este proyecto es tomar un código fuente escrito en python y realizar un
-análisis léxico sobre dicho código. 
+---
 
-Se implementa un programa en Python que recibe un archivo py como entrada y devuelve un archivo 
-txt con el análisis léxico del mismo como salida.
+## 🎯 Project Objective
 
-## 🧷 Requerimientos
+This project is designed to take a source code file written in Python and perform **lexical analysis** on it.
 
-### Dependencias necesarias
+A Python program is implemented that receives a `.py` file as input and produces a `.txt` file as output, containing the lexical analysis results.
 
-- **Python** (versión 3 o superior)
+---
 
-## 👾 Modo de Uso:
-1. Descarga los archivos adjuntos.
-2. Escribe tu código dentro de "codigo.py", o usa el código de ejemplo.
-3. Ejecuta el siguiente comando:
+## 🧷 Requirements
+
+### ✅ Dependencies
+
+- **Python 3** or higher must be installed on your system.
+
+---
+
+## 👾 How to Use
+
+1. Download all provided project files.
+2. Edit the file `codigo.py` to include your own Python code, or use the provided example.
+3. Run the following command in your terminal:
 
 ```
 python3 analizador_lexico.py codigo.py
 ```
 
-Los resultados del analizador léxico se guardan en el archivo de salida "resultado_lexico.txt"
+The lexical analysis result will be saved in the output file named: "resultado_lexico.txt"
 
-Como ejemplo prueba tenemos:
+---
 
-Codigo.py
+## 📄 Example:
+
+*codigo.py*
+
 ```
 class Animal(object): 
     makes_noise:bool = False 
@@ -153,3 +162,10 @@ resultado_lexico.txt
 <tk_par_izq, 20, 13>
 <tk_par_der, 20, 14>
 ```
+
+
+### 👥 Team Members:
+
+- [Josh Lopez](https://github.com/joshmessi10)
+- [Miguel Suarez](https://github.com/PlusMore75)
+- [Maria Alejandra Vargas](https://github.com/Malejav18)
